@@ -44,7 +44,7 @@ class CButtonColumn extends CGridColumn
 	 * defines additional buttons, their IDs are also recognized here. For example, if a button named 'preview'
 	 * is declared in {@link buttons}, we can use the token '{preview}' here to specify where to display the button.
 	 */
-	public $template='{view} {update} {delete}';
+	public $template='{view} {update} {delete} {detail}';
 	/**
 	 * @var string the label for the view button. Defaults to "View".
 	 * Note that the label will not be HTML-encoded when rendering.
@@ -93,6 +93,33 @@ class CButtonColumn extends CGridColumn
 	 * @var string the label for the delete button. Defaults to "Delete".
 	 * Note that the label will not be HTML-encoded when rendering.
 	 */
+
+
+
+	public $detailButtonLabel;
+	/**
+	 * @var string the image URL for the detail button. If not set, an integrated image will be used.
+	 * You may set this property to be false to render a text link instead.
+	 */
+	public $detailButtonImageUrl;
+	/**
+	 * @var string a PHP expression that is evaluated for every update button and whose result is used
+	 * as the URL for the update button. In this expression, the variable
+	 * <code>$row</code> the row number (zero-based); <code>$data</code> the data model for the row;
+	 * and <code>$this</code> the column object.
+	 */
+	public $detailButtonUrl='Yii::app()->controller->createUrl("detail",array("id"=>$data->primaryKey))';
+	/**
+	 * @var array the HTML options for the detail button tag.
+	 */
+	public $detailButtonOptions=array('class'=>'detail');
+
+	/**
+	 * @var string the label for the detail button. Defaults to "Delete".
+	 * Note that the label will not be HTML-encoded when rendering.
+	 */
+
+
 	public $deleteButtonLabel;
 	/**
 	 * @var string the image URL for the delete button. If not set, an integrated image will be used.
@@ -192,7 +219,9 @@ class CButtonColumn extends CGridColumn
 			$this->viewButtonLabel=Yii::t('zii','View');
 		if($this->updateButtonLabel===null)
 			$this->updateButtonLabel=Yii::t('zii','Update');
-		if($this->deleteButtonLabel===null)
+		if($this->detailButtonLabel===null)
+			$this->updateButtonLabel=Yii::t('zii','Detail');
+		if($this->detailButtonLabel===null)
 			$this->deleteButtonLabel=Yii::t('zii','Delete');
 		if($this->viewButtonImageUrl===null)
 			$this->viewButtonImageUrl=$this->grid->baseScriptUrl.'/view.png';
@@ -203,7 +232,7 @@ class CButtonColumn extends CGridColumn
 		if($this->deleteConfirmation===null)
 			$this->deleteConfirmation=Yii::t('zii','Are you sure you want to delete this item?');
 
-		foreach(array('view','update','delete') as $id)
+		foreach(array('view','update','delete','detail') as $id)
 		{
 			$button=array(
 				'label'=>$this->{$id.'ButtonLabel'},

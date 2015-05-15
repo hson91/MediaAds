@@ -3815,3 +3815,436 @@ Stack trace:
 REQUEST_URI=/mediaAds/admin/device/update/2
 HTTP_REFERER=http://localhost/mediaAds/admin/device/index
 ---
+2015/05/15 17:12:25 [error] [exception.CException] exception 'CException' with message 'Property "Device.PkProductID" is not defined.' in C:\xampp\htdocs\MediaAds\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\db\ar\CActiveRecord.php(144): CComponent->__get('PkProductID')
+#1 C:\xampp\htdocs\MediaAds\protected\modules\admin\views\device\update.php(2): CActiveRecord->__get('PkProductID')
+#2 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(127): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(783): CController->renderPartial('update', Array, true)
+#6 C:\xampp\htdocs\MediaAds\protected\modules\admin\controllers\DeviceController.php(44): CController->render('update', Array)
+#7 [internal function]: DeviceController->actionUpdate('1')
+#8 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DeviceController), Array)
+#9 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DeviceController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(283): CController->run('update')
+#19 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/device/up...')
+#20 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#22 {main}
+REQUEST_URI=/MediaAds/admin/device/update/1
+HTTP_REFERER=http://localhost/MediaAds/admin/device/index
+---
+2015/05/15 17:15:48 [error] [exception.CException] exception 'CException' with message 'Property "Device.PkProductID" is not defined.' in C:\xampp\htdocs\MediaAds\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\db\ar\CActiveRecord.php(144): CComponent->__get('PkProductID')
+#1 C:\xampp\htdocs\MediaAds\protected\modules\admin\views\device\update.php(2): CActiveRecord->__get('PkProductID')
+#2 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(127): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(783): CController->renderPartial('update', Array, true)
+#6 C:\xampp\htdocs\MediaAds\protected\modules\admin\controllers\DeviceController.php(44): CController->render('update', Array)
+#7 [internal function]: DeviceController->actionUpdate('2')
+#8 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DeviceController), Array)
+#9 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DeviceController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(283): CController->run('update')
+#19 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/device/up...')
+#20 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#22 {main}
+REQUEST_URI=/MediaAds/admin/device/update/2
+HTTP_REFERER=http://localhost/MediaAds/admin/device/
+---
+2015/05/15 17:16:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "deleteList".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(271): CController->missingAction('deleteList')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(283): CController->run('deleteList')
+#2 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/device/de...')
+#3 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/MediaAds/admin/device/deleteList
+HTTP_REFERER=http://localhost/MediaAds/admin/device/
+---
+2015/05/15 17:16:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "deleteList".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(271): CController->missingAction('deleteList')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(283): CController->run('deleteList')
+#2 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/device/de...')
+#3 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#5 {main}
+REQUEST_URI=/MediaAds/admin/device/deleteList
+HTTP_REFERER=http://localhost/MediaAds/admin/device/
+---
+2015/05/15 17:18:39 [error] [exception.CException] exception 'CException' with message 'Property "Device.PkProductID" is not defined.' in C:\xampp\htdocs\MediaAds\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\db\ar\CActiveRecord.php(144): CComponent->__get('PkProductID')
+#1 C:\xampp\htdocs\MediaAds\protected\modules\admin\views\device\update.php(2): CActiveRecord->__get('PkProductID')
+#2 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(127): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(783): CController->renderPartial('update', Array, true)
+#6 C:\xampp\htdocs\MediaAds\protected\modules\admin\controllers\DeviceController.php(44): CController->render('update', Array)
+#7 [internal function]: DeviceController->actionUpdate('3')
+#8 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DeviceController), Array)
+#9 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DeviceController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(283): CController->run('update')
+#19 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/device/up...')
+#20 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#22 {main}
+REQUEST_URI=/MediaAds/admin/device/update/3
+HTTP_REFERER=http://localhost/MediaAds/admin/device/index
+---
+2015/05/15 17:28:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "product".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('product')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/product
+---
+2015/05/15 17:28:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/peoduct".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/peoduct')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/admin/peoduct
+---
+2015/05/15 17:28:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/product".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/product')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/admin/product
+---
+2015/05/15 17:28:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/peoduct".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/peoduct')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/admin/peoduct
+---
+2015/05/15 17:28:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "product".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('product')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/product
+HTTP_REFERER=http://localhost/MediaAds/admin/device/create
+---
+2015/05/15 17:29:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "product".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('product')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/product
+HTTP_REFERER=http://localhost/MediaAds/admin/device/create
+---
+2015/05/15 17:29:45 [error] [exception.CException] exception 'CException' with message 'Property "Device.PkProductID" is not defined.' in C:\xampp\htdocs\MediaAds\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\db\ar\CActiveRecord.php(144): CComponent->__get('PkProductID')
+#1 C:\xampp\htdocs\MediaAds\protected\modules\admin\views\device\update.php(2): CActiveRecord->__get('PkProductID')
+#2 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(127): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(783): CController->renderPartial('update', Array, true)
+#6 C:\xampp\htdocs\MediaAds\protected\modules\admin\controllers\DeviceController.php(44): CController->render('update', Array)
+#7 [internal function]: DeviceController->actionUpdate('3')
+#8 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DeviceController), Array)
+#9 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DeviceController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(283): CController->run('update')
+#19 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/device/up...')
+#20 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#22 {main}
+REQUEST_URI=/MediaAds/admin/device/update/3
+HTTP_REFERER=http://localhost/MediaAds/admin/device
+---
+2015/05/15 17:34:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "device/detail".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('device/detail')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/device/detail/111
+HTTP_REFERER=http://localhost/MediaAds/admin/device/update/3
+---
+2015/05/15 17:34:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "device/detail".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('device/detail')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/device/detail/111
+HTTP_REFERER=http://localhost/MediaAds/admin/device/update/3
+---
+2015/05/15 17:34:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "product/detail".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('product/detail')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/product/detail/111
+---
+2015/05/15 17:34:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "device".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('device')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/device
+HTTP_REFERER=http://localhost/MediaAds/admin/device/create
+---
+2015/05/15 17:35:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "device/detail".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('device/detail')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/device/detail/111
+HTTP_REFERER=http://localhost/MediaAds/admin/device/update/3
+---
+2015/05/15 17:36:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/log/index".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/log/index')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/admin/log/index
+HTTP_REFERER=http://localhost/MediaAds/admin/device/
+---
+2015/05/15 17:36:30 [error] [exception.CException] exception 'CException' with message 'Property "Configs.title" is not defined.' in C:\xampp\htdocs\MediaAds\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\db\ar\CActiveRecord.php(144): CComponent->__get('title')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\web\helpers\CHtml.php(2158): CActiveRecord->__get('title')
+#2 C:\xampp\htdocs\MediaAds\lib\yii\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Configs), 'title')
+#3 C:\xampp\htdocs\MediaAds\lib\yii\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Configs), 'title', Array)
+#4 C:\xampp\htdocs\MediaAds\lib\yii\zii\widgets\grid\CDataColumn.php(98): CHtml::activeTextField(Object(Configs), 'title', Array)
+#5 C:\xampp\htdocs\MediaAds\lib\yii\zii\widgets\grid\CGridColumn.php(110): CDataColumn->renderFilterCellContent()
+#6 C:\xampp\htdocs\MediaAds\lib\yii\zii\widgets\grid\CGridView.php(477): CGridColumn->renderFilterCell()
+#7 C:\xampp\htdocs\MediaAds\lib\yii\zii\widgets\grid\CGridView.php(455): CGridView->renderFilter()
+#8 C:\xampp\htdocs\MediaAds\lib\yii\zii\widgets\grid\CGridView.php(425): CGridView->renderTableHeader()
+#9 C:\xampp\htdocs\MediaAds\lib\yii\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 C:\xampp\htdocs\MediaAds\lib\yii\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 C:\xampp\htdocs\MediaAds\lib\yii\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#13 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(174): CBaseListView->run()
+#14 C:\xampp\htdocs\MediaAds\protected\modules\admin\views\configs\index.php(70): CBaseController->widget('zii.widgets.gri...', Array)
+#15 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(127): require('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#17 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#18 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(783): CController->renderPartial('index', Array, true)
+#19 C:\xampp\htdocs\MediaAds\protected\modules\admin\controllers\ConfigsController.php(61): CController->render('index', Array)
+#20 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CInlineAction.php(50): ConfigsController->actionIndex()
+#21 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#24 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#26 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(292): CFilterChain->run()
+#28 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(283): CController->run('index')
+#30 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/configs/i...')
+#31 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#32 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#33 {main}
+REQUEST_URI=/MediaAds/admin/configs/index
+HTTP_REFERER=http://localhost/MediaAds/admin/log/index
+---
+2015/05/15 17:36:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/log/index".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/log/index')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/admin/log/index
+HTTP_REFERER=http://localhost/MediaAds/admin/device/
+---
+2015/05/15 19:24:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('index')
+#1 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#3 {main}
+REQUEST_URI=/MediaAds/index
+---
+2015/05/15 19:30:11 [error] [exception.CException] exception 'CException' with message 'Property "Device.UnProductName" is not defined.' in C:\xampp\htdocs\MediaAds\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\db\ar\CActiveRecord.php(144): CComponent->__get('UnProductName')
+#1 C:\xampp\htdocs\MediaAds\protected\modules\admin\views\device\view.php(3): CActiveRecord->__get('UnProductName')
+#2 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(127): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\MediaAds\protected\modules\admin\controllers\DeviceController.php(20): CController->render('view', Array)
+#7 [internal function]: DeviceController->actionDetail('3')
+#8 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DeviceController), Array)
+#9 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DeviceController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(283): CController->run('detail')
+#19 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/device/de...')
+#20 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#22 {main}
+REQUEST_URI=/MediaAds/admin/device/detail/3
+HTTP_REFERER=http://localhost/MediaAds/admin/device/index
+---
+2015/05/15 19:30:47 [error] [exception.CException] exception 'CException' with message 'Property "Device.UnProductName" is not defined.' in C:\xampp\htdocs\MediaAds\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\db\ar\CActiveRecord.php(144): CComponent->__get('UnProductName')
+#1 C:\xampp\htdocs\MediaAds\protected\modules\admin\views\device\view.php(3): CActiveRecord->__get('UnProductName')
+#2 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(127): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\MediaAds\protected\modules\admin\controllers\DeviceController.php(20): CController->render('view', Array)
+#7 [internal function]: DeviceController->actionDetail('3')
+#8 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DeviceController), Array)
+#9 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DeviceController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(283): CController->run('detail')
+#19 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/device/de...')
+#20 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#22 {main}
+REQUEST_URI=/MediaAds/admin/device/detail/3
+HTTP_REFERER=http://localhost/MediaAds/admin/device/index
+---
+2015/05/15 19:31:31 [error] [exception.CException] exception 'CException' with message 'Property "Device.UnProductName" is not defined.' in C:\xampp\htdocs\MediaAds\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\db\ar\CActiveRecord.php(144): CComponent->__get('UnProductName')
+#1 C:\xampp\htdocs\MediaAds\protected\modules\admin\views\device\view.php(3): CActiveRecord->__get('UnProductName')
+#2 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(127): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\MediaAds\protected\modules\admin\controllers\DeviceController.php(20): CController->render('view', Array)
+#7 [internal function]: DeviceController->actionDetail('3')
+#8 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DeviceController), Array)
+#9 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DeviceController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(283): CController->run('detail')
+#19 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/device/de...')
+#20 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#22 {main}
+REQUEST_URI=/MediaAds/admin/device/detail/3
+HTTP_REFERER=http://localhost/MediaAds/admin/device/index
+---
+2015/05/15 19:32:40 [error] [exception.CException] exception 'CException' with message 'Property "Device.UnProductName" is not defined.' in C:\xampp\htdocs\MediaAds\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\db\ar\CActiveRecord.php(144): CComponent->__get('UnProductName')
+#1 C:\xampp\htdocs\MediaAds\protected\modules\admin\views\device\view.php(3): CActiveRecord->__get('UnProductName')
+#2 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(127): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\MediaAds\protected\modules\admin\controllers\DeviceController.php(20): CController->render('view', Array)
+#7 [internal function]: DeviceController->actionDetail('3')
+#8 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DeviceController), Array)
+#9 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DeviceController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(283): CController->run('detail')
+#19 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/device/de...')
+#20 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#22 {main}
+REQUEST_URI=/MediaAds/admin/device/detail/3
+HTTP_REFERER=http://localhost/MediaAds/admin/device/index
+---
+2015/05/15 19:34:18 [error] [exception.CException] exception 'CException' with message 'Property "Device.UnProductName" is not defined.' in C:\xampp\htdocs\MediaAds\lib\yii\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\MediaAds\lib\yii\db\ar\CActiveRecord.php(144): CComponent->__get('UnProductName')
+#1 C:\xampp\htdocs\MediaAds\protected\modules\admin\views\device\view.php(3): CActiveRecord->__get('UnProductName')
+#2 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(127): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\MediaAds\lib\yii\web\CBaseController.php(96): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(870): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\MediaAds\protected\modules\admin\controllers\DeviceController.php(20): CController->render('view', Array)
+#7 [internal function]: DeviceController->actionDetail('3')
+#8 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DeviceController), Array)
+#9 C:\xampp\htdocs\MediaAds\lib\yii\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DeviceController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\MediaAds\lib\yii\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\MediaAds\lib\yii\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(283): CController->run('detail')
+#19 C:\xampp\htdocs\MediaAds\lib\yii\web\CWebApplication.php(142): CWebApplication->runController('admin/device/de...')
+#20 C:\xampp\htdocs\MediaAds\lib\yii\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\MediaAds\index.php(12): CApplication->run()
+#22 {main}
+REQUEST_URI=/MediaAds/admin/device/detail/3
+HTTP_REFERER=http://localhost/MediaAds/admin/device/index
+---
