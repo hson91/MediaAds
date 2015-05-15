@@ -32,7 +32,9 @@
     <div class="message-show"></div>
     <div class="header">
         <div class="h-left">
-            <a href="<?php echo Yii::app()->baseUrl?>/admin">Admin Dashboard</a>
+            <a style="font-size: 24px; color: #fff;" href="<?php echo  Yii::app()->baseUrl?>/">
+                <img src="<?php echo Yii::app()->controller->module->assetsUrl.'/images/websites/logoadmin.png'?>" style="width: 170px; height: 50px;" />
+            </a>
         </div>
         <div class="h-right">
             <span><?php echo Yii::app()->user->getState('fullname');?></span>

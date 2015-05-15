@@ -1,0 +1,7 @@
+.header, .left, .footer, .breadcrumb, .head, .title, .action, .bill, .tbuser{display:none}
+.right{float:left;width:300px}
+.bill-print{display:block}
+.bill-print table{width:100%;padding-bottom:10px;border-bottom:1px double #000}
+.bill-print table td.float-right{text-align:right}
+.bill-print .product-bill-title{font-weight:bold;padding-top:20px}
+.bill-print .total{font-size:28px;text-align:right;padding:10px 0}

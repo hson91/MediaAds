@@ -50,9 +50,16 @@ $this->widget('zii.widgets.grid.CGridView', array(
         array(
             'name'=>'deviceStatus',
             'filter'=>Yii::app()->params["device_status"],
-            'value'=>'Yii::app()->params["device_status"][$data->deviceStatus]',
+            'value'=>'"<strong style=\"color:#888\" >".Yii::app()->params["device_status"][$data->deviceStatus]."</strong>"',
             'type'=>'raw',
             'htmlOptions'=>array('class'=>'ct'),
+        ),
+        array(
+            'name' => 'scheduleRunning',
+            'filter' => false,
+            'value' => 'CHtml::link("&#xf0ce;", array("#","id"=>0), array("class"=>"icon","style" => "font-size:24px; color:green"))',
+            'type' => 'raw',
+            'htmlOptions'=>array('class'=>'ct','style' => 'width:80px'),
         ),
         array(
             'name'=>'interActionClosest',
@@ -93,4 +100,5 @@ $this->widget('zii.widgets.grid.CGridView', array(
         'selectedPageCssClass'=>'active',
     ),
     'pagerCssClass' => 'pagination',
-));?>
+));
+?>
