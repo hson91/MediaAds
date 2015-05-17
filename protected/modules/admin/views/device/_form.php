@@ -1,5 +1,5 @@
 <?php $form = $this->beginWidget('CActiveForm', array(
-    	'id'=>'product-form',
+    	'id'=>'device-form',
     	'enableAjaxValidation'=>false,
     )); ?>
     
@@ -117,7 +117,7 @@
 	<div class="controls">
         <label class="label" style="display: inline-block;"> &nbsp;</label>
         <div class="input">
-            <?php echo CHtml::dButton($model->isNewRecord ? 'Tạo mới' : 'Lưu lại',array('class'=>'bnt-form')); ?>
+            <?php echo CHtml::submitButton($model->isNewRecord ? 'Tạo mới' : 'Lưu lại',array('class'=>'bnt-form')); ?>
             <?php echo CHtml::resetButton('Hủy bỏ',array('class'=>'bnt-form','style'=>'margin-left:10px')); ?>
         </div>
 	</div>

@@ -17,7 +17,8 @@ class DeviceController extends AController
 	}
     public function actionDetail($id){
         $model = $this->loadModel($id);
-        $this->render('view',array('model'=>$model));
+        // $this->render('view',array('model'=>$model));
+        $this->redirect(array('cheduledevice/create/'));
     }
 	public function actionCreate(){
 		$model = new Device;

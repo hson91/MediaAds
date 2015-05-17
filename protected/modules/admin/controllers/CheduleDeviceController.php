@@ -1,5 +1,5 @@
 <?php
-class VideoController extends AController
+class CheduleDeviceController extends AController
 {
 	public function filters()
 	{
@@ -9,10 +9,10 @@ class VideoController extends AController
 	}
     public function actionIndex()
 	{
-		$model=new Video('search');
+		$model=new Cheduledevice('search');
 		$model->unsetAttributes();
-		if(isset($_GET['Video']))
-			$model->attributes=$_GET['Video'];
+		if(isset($_GET['Cheduledevice']))
+			$model->attributes=$_GET['Cheduledevice'];
 
 		$this->render('index',array(
 			'model'=>$model,
@@ -24,9 +24,9 @@ class VideoController extends AController
     }
 	public function actionCreate()
 	{
-		$model=new Product;
-		if(isset($_POST['Video'])){
-			$model->attributes=$_POST['Video'];
+		$model=new Cheduledevice;
+		if(isset($_POST['Cheduledevice'])){
+			$model->attributes=$_POST['Cheduledevice'];
             if($model->save()){
                 $this->redirect(array('index'));
             }
@@ -38,8 +38,8 @@ class VideoController extends AController
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-        if(isset($_POST['Video'])){
-			$model->attributes=$_POST['Video'];
+        if(isset($_POST['Cheduledevice'])){
+			$model->attributes=$_POST['Cheduledevice'];
             if($model->save()){
                 $this->redirect(array('index'));
             }
@@ -72,7 +72,7 @@ class VideoController extends AController
     }
 	public function loadModel($id)
 	{
-		$model=Product::model()->findByPk($id);
+		$model=Cheduledevice::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'Không tồn tại sản phẩm này.');
 		return $model;
