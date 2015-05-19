@@ -392,6 +392,7 @@ public class ActivityMain extends BaseActivity implements HttpHandler, UncaughtE
 	@Override
 	public void handleException(int ID, int Name, Exception ex, Object holder) {
 		handleError(ex);
+		runOfflineMode();
 	}
 
 	@Override
