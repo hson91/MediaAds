@@ -45,7 +45,7 @@ class Video extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('videoName, videoStatus, inserted, updated', 'required'),
+			array('videoName, videoStatus', 'required'),
 			array('updateClosest, inserted, updated', 'numerical', 'integerOnly'=>true),
 			array('videoName, description, flagDeleted, videoStatus', 'length', 'max'=>255),
 			// The following rule is used by search().
@@ -108,4 +108,13 @@ class Video extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	public function beforeSave(){
+        if($this->isNewRecord){
+            $this->inserted = time();
+        }
+        $this->updated = time();
+        return true;
+    }
+
 }

@@ -22,9 +22,9 @@ class VideoController extends AController
         $this->render('view',array('model'=>$model));
     }
 	public function actionCreate(){
-		$model=new Product;
-		if(isset($_POST['Video'])){
-			$model->attributes=$_POST['Video'];
+		$model=new Video;
+		if(isset($_REQUEST['Video'])){
+			$model->attributes=$_REQUEST['Video'];
             if($model->save()){
                 $this->redirect(array('index'));
             }
@@ -67,7 +67,7 @@ class VideoController extends AController
         }
     }
 	public function loadModel($id){
-		$model=Product::model()->findByPk($id);
+		$model=Video::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'Không tồn tại sản phẩm này.');
 		return $model;

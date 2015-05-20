@@ -70,7 +70,7 @@ $this->widget('zii.widgets.grid.CGridView', array(
         ),
         array(
 			'class'=>'CButtonColumn',
-            'template'=>'{update}{delete}{detail}',//{deny}
+            'template'=>'{update}{delete}',//{deny}
             'buttons' => array(
                 'update'=>array(
                     'label'=>'<i>&#xf040;</i>',
@@ -81,16 +81,11 @@ $this->widget('zii.widgets.grid.CGridView', array(
                     'label'=>'<i>&#xf014;</i>',
                     'imageUrl' => false,
                     'options'=>array( 'title'=>'Xóa','class'=>'delete btnAction2'),
-                ),
-                'detail'=>array(
-                    'label'=>'<i>&#xf074;</i>',
-                    'imageUrl' => false,
-                    'options'=>array( 'title'=>'chi tiết','class'=>'btnAction2'),
                 ),               
             ),
             'header'=>CHtml::dropDownList('pageSize',$pageSize,Yii::app()->params['recordsPerPage'],array(
                           'onchange'=>"$.fn.yiiGridView.update('data-grid',{data:{pageSize: $(this).val()}})")),
-            'htmlOptions'=>array('class'=>'ct act','style'=>'width:190px; padding:0; text-align:left; display:table-cell; padding-left:3px'),
+            'htmlOptions'=>array('class'=>'ct act','style'=>'width:100px; padding:0; text-align:left; display:table-cell; padding-left:3px'),
 		),
         
 	),
